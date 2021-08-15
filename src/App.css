@@ -1,0 +1,12 @@
+* {
+  margin-top: 0;
+}
+
+.app-content {
+  margin-top: 70px;
+  border-top: solid 1px red;
+}
+
+.mainContent .mainContentTitle {
+  padding: 15px 10px;
+}

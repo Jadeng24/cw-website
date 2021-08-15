@@ -1,0 +1,79 @@
+.NavHolder {
+  width: 100vw;
+  height: 60px;
+  background: #328115;
+}
+
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav links */
+.navSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Nav a {
+  text-decoration: none;
+  color: #4d4d43;
+  font-size: 14pt;
+  line-height: 14pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.CWLogoHolder {
+  margin-left: -2px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  padding: 0px 8px;
+}
+.CWLogo {
+  padding: 0px 2px;
+  height: 50px;
+  filter: invert(0%);
+  border-radius: 50px;
+  transition: 0.1s;
+}
+
+.centerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+}
+
+.linkName {
+  color: white;
+  padding: 4px 8px;
+  /* border: solid 2px rgba(255, 255, 255, 0.2); */
+  margin: 0px 8px;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.linkName:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* right nav */
+/* social media links */
+.rightNav img {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0px 4px;
+}
+.rightNav img:hover {
+  opacity: 1;
+  background: #567d46;
+}
