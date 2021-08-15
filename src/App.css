@@ -7,6 +7,9 @@
   border-top: solid 1px red;
 }
 
+.mainContent {
+  min-height: 90vh;
+}
 .mainContent .mainContentTitle {
   padding: 15px 10px;
 }

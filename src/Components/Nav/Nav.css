@@ -1,44 +1,53 @@
 .NavHolder {
-  width: 100vw;
-  height: 60px;
-  background: #328115;
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px 2px 10px rgb(243, 243, 243);
+  background: rgb(255, 255, 255);
 }
 
 .Nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
 /* nav links */
 .navSection {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 .Nav a {
   text-decoration: none;
   color: #4d4d43;
-  font-size: 14pt;
-  line-height: 14pt;
+  /* font-size: 14pt; */
+  /* line-height: 14pt; */
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .CWLogoHolder {
   margin-left: -2px;
-  height: 60px;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #222;
   padding: 0px 8px;
+  transition: 0.3s;
 }
 .CWLogo {
   padding: 0px 2px;
-  height: 50px;
+  height: 35px;
   filter: invert(0%);
   border-radius: 50px;
   transition: 0.1s;
+}
+.CWLogoHolder:hover {
+  background: rgb(53, 53, 53);
 }
 
 .centerNav {
@@ -46,34 +55,49 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 60px;
+  height: 100%;
 }
 
 .linkName {
-  color: white;
-  padding: 4px 8px;
+  color: #567d46;
+  padding: 0px 18px;
   /* border: solid 2px rgba(255, 255, 255, 0.2); */
-  margin: 0px 8px;
   transition: 0.3s;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .linkName:hover {
-  background: rgba(255, 255, 255, 0.4);
+  color: white;
+  transform: scale(1.1);
+  background: #7eb369;
+}
+
+.divider {
+  height: 60%;
+  width: 1px;
+  background: rgb(240, 240, 240);
 }
 
 /* right nav */
-/* social media links */
-.rightNav img {
-  width: 30px;
-  height: 30px;
-  border-radius: 7px;
-  opacity: 0.4;
-  cursor: pointer;
-  transition: 0.3s;
-  margin: 0px 4px;
-}
-.rightNav img:hover {
-  opacity: 1;
+
+.rightNav {
+  height: 100%;
   background: #567d46;
+}
+.rightNav .quoteBtn {
+  padding: 0px 25px;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: 0.3s;
+}
+.rightNav:hover .quoteBtn {
+  transform: scale(1.1);
+  background: #7eb369;
 }

@@ -1,0 +1,17 @@
+.mainImageHolder {
+  padding: 10px;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.mainImageHolder .mainContentTitle {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  color: white;
+}
