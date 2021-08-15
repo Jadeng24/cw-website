@@ -1,21 +1,26 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Components/Home/Home';
+import Nav from './Components/Nav/Nav';
+import Lawncare from './Components/Lawncare/Lawncare';
 
 function App() {
   return (
     <div className="App">
-      <div>
 
-        <Router>
-          <Switch>
-            {/*===| Routes |=================================*/}
-            <Route component={Home} exact path='/' />
-            {/* <Route component={About} path='/about' /> */}
-          </Switch>
-        </Router>
+      <BrowserRouter>
+        <Nav />
+        <Switch>
+          {/*===| Routes |=================================*/}
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/lawncare'>
+            <Lawncare />
+          </Route>
+        </Switch>
+      </BrowserRouter>
 
-      </div>
     </div>
   );
 }
